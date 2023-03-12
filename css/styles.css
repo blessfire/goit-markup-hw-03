@@ -9,16 +9,24 @@
 }
 
 body {
-  /* font-family: 'Raleway', sans-serif;
-font-family: 'Roboto', sans-serif; */
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
+  letter-spacing: 0.02em;
   color: var(--primary-text-color);
-
-  /* links */
 }
+
+h1,
+h2,
+h3 {
+}
+p {
+}
+ul {
+}
+/* links */
+
 .link {
   text-decoration: none;
   letter-spacing: 0.02em;
@@ -123,6 +131,9 @@ font-family: 'Roboto', sans-serif; */
 }
 
 /* team */
+.team {
+  background-color: var(--team-color);
+}
 .our-team-title {
   font-style: normal;
   font-weight: 700;

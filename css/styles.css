@@ -17,19 +17,34 @@ body {
   color: var(--primary-text-color);
 }
 
-h1,
-h2,
-h3 {
+h1 {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.07;
 }
-p {
+h2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  color: var(--title-text-color);
+}
+h3 {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+
+  color: var(--title-text-color);
 }
 ul {
+  list-style-type: none;
+}
+.container {
+  width: ;
 }
 /* links */
 
 .link {
   text-decoration: none;
-  letter-spacing: 0.02em;
   color: var(--nav-active-color);
 }
 .link:hover,
@@ -47,10 +62,6 @@ ul {
   letter-spacing: 0.04em;
   cursor: pointer;
 }
-/* list */
-.list {
-  list-style-type: none;
-}
 
 /* logo */
 .logo {
@@ -65,7 +76,7 @@ ul {
 .header {
   color: var(--subtle-color);
 }
-/* nav elements */
+/*nav elements */
 .nav-logo-studio {
   color: var(--title-text-color);
 }
@@ -76,26 +87,20 @@ ul {
 }
 .contact {
   font-style: normal;
-  letter-spacing: 0.02em;
   color: var(--primary-text-color);
 }
 
-/* hero */
+/*? hero */
 
 .hero {
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
   text-align: center;
-  letter-spacing: 0.02em;
   color: var(--hero-text-color);
   background-color: var(--title-text-color);
 }
-.hero-title {
-  font-size: 56px;
-  line-height: 1.07;
-  letter-spacing: 0.02em;
-}
+
 .hidden-title {
 }
 .hero-btn {
@@ -106,57 +111,30 @@ ul {
 .hero-btn:focus {
   background-color: var(--primary-color);
 }
-/* skills */
-.skills-title {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  color: var(--title-text-color);
-}
-.skills-text {
-  letter-spacing: 0.02em;
-}
-
-/* works */
-.works {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.11;
-  text-align: center;
-  letter-spacing: 0.02em;
-  text-transform: capitalize;
-  color: var(--title-text-color);
-}
+/* todo skills */
+/* *works */
 
 /* team */
 .team {
   background-color: var(--team-color);
 }
-.our-team-title {
-  font-style: normal;
+/* .our-team-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
   text-align: center;
-  letter-spacing: 0.02em;
+
   text-transform: capitalize;
   color: var(--title-text-color);
-}
-.team-card-title {
-  font-style: normal;
+} */
+/* .team-card-title {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   text-align: center;
-  letter-spacing: 0.02em;
+
   color: var(--title-text-color);
-}
-.team-card-text {
-  text-align: center;
-  letter-spacing: 0.02em;
-}
+} */
 
 /* portfolio menu */
 .menu-btn {
@@ -167,21 +145,6 @@ ul {
 .menu-btn:hover {
   color: var(--hero-text-color);
   background-color: var(--primary-color);
-}
-
-.menu-title {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  color: var(--title-text-color);
-}
-.menu-text {
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: var(--primary-text-color);
 }
 
 /* footer */

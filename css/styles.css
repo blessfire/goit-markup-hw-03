@@ -11,7 +11,8 @@
   --card-border: 1px solid var(--subtle-color);
   --box-gap: 24px;
   --box-margin-top: 72px;
-  --box-padding: 120px 0;
+  --section-padding-top: 120px;
+  --section-padding-bottom: 120px;
 }
 
 * {
@@ -141,11 +142,13 @@ img {
 /*? hero */
 
 .hero-title {
+  display: inline-block;
+  text-align: center;
   margin-bottom: 48px;
+  max-width: 496px;
 }
 .hero {
-  padding-top: 188px;
-  padding-bottom: 188px;
+  padding: 188px 0;
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
@@ -180,9 +183,12 @@ img {
   background-color: var(--primary-color);
 }
 /* todo skills */
-
-.skills {
-  padding: var(--box-padding);
+.section {
+  padding: 120px 0;
+}
+.section > .works-box {
+  padding-top: 0;
+  /* !чому тут падінш не перебиває ?  */
 }
 
 .skills-box {
@@ -190,10 +196,7 @@ img {
   gap: var(--box-gap);
 }
 /* *works */
-.works-box {
-  padding-top: 0;
-  padding-bottom: 120px;
-}
+
 .works-box .list {
   display: flex;
   gap: var(--box-gap);
@@ -208,8 +211,6 @@ img {
 }
 /* team */
 .team {
-  padding-top: 120px;
-  padding-bottom: 120px;
   background-color: var(--team-color);
 }
 /* .our-team-title {

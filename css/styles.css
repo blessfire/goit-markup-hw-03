@@ -15,9 +15,6 @@
   --section-padding-bottom: 120px;
 }
 
-* {
-  outline: tomato solid 1px;
-}
 body {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
@@ -37,7 +34,7 @@ h1 {
   font-size: 56px;
   line-height: 1.07;
 }
-h2 {
+.works {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
@@ -47,12 +44,12 @@ h3 {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
-
   color: var(--title-text-color);
 }
 ul {
   list-style-type: none;
   padding-left: 0;
+  margin: 0;
 }
 button {
   margin: 0;
@@ -90,9 +87,6 @@ img {
   line-height: 1.5;
   letter-spacing: 0.04em;
   cursor: pointer;
-
-  /* todo */
-  border: ;
 }
 
 /* logo */
@@ -113,6 +107,7 @@ img {
 }
 .header-container {
   display: flex;
+  justify-content: space-between;
 }
 
 /*nav elements */
@@ -124,6 +119,13 @@ img {
 .nav-items {
   display: flex;
   align-items: center;
+  gap: 76px;
+  font-weight: 500;
+  color: var(--title-text-color);
+}
+.nav-list {
+  display: flex;
+  gap: 40px;
   font-weight: 500;
   color: var(--title-text-color);
 }
@@ -137,13 +139,15 @@ img {
 }
 .contact-list {
   display: flex;
+  gap: 40px;
 }
 
 /*? hero */
 
 .hero-title {
-  display: inline-block;
-  text-align: center;
+  display: block;
+  justify-content: center;
+  margin: 0 auto;
   margin-bottom: 48px;
   max-width: 496px;
 }
@@ -170,8 +174,8 @@ img {
 
 .hero-btn {
   display: block;
-  padding: 16px 32px;
   margin: 0 auto;
+  padding: 16px 32px;
   border-color: transparent;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -184,54 +188,55 @@ img {
 }
 /* todo skills */
 .section {
-  padding: 120px 0;
-}
-.section > .works-box {
-  padding-top: 0;
-  /* !чому тут падінш не перебиває ?  */
+  padding-top: var(--section-padding-top);
+  padding-bottom: var(--section-padding-bottom);
 }
 
 .skills-box {
   display: flex;
   gap: var(--box-gap);
 }
-/* *works */
-
+.skills-text {
+  margin-top: 8px;
+}
+.works-title {
+  text-align: center;
+}
 .works-box .list {
   display: flex;
   gap: var(--box-gap);
+  padding-top: 0;
+  padding-bottom: var(--section-padding-bottom);
+  margin-top: var(--box-margin-top);
 }
-
+.team-title {
+  text-align: center;
+}
 .team-box {
   display: flex;
   gap: var(--box-gap);
   margin-top: var(--box-margin-top);
 }
-.item {
-}
+
 /* team */
+.team-card-text {
+  text-align: center;
+  padding: 32px 16px;
+  background-color: var(--hero-text-color);
+  border-radius: 0px 0px 4px 4px;
+}
+.team-card-title {
+  margin-bottom: 8px;
+}
 .team {
   background-color: var(--team-color);
 }
-/* .our-team-title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.11;
-  text-align: center;
-
-  text-transform: capitalize;
-  color: var(--title-text-color);
-} */
-/* .team-card-title {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  text-align: center;
-
-  color: var(--title-text-color);
-} */
-
-/* portfolio menu */
+.team li {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
+}
+/* *portfolio menu */
 .menu {
   padding-top: 96px;
   padding-bottom: 120px;
@@ -241,7 +246,6 @@ img {
   display: flex;
   justify-content: center;
   gap: 24px;
-  outline: auto;
   margin-bottom: 72px;
 }
 .menu-btn {
@@ -265,22 +269,24 @@ img {
   margin: 0;
   display: flex;
   flex-wrap: wrap;
-  margin-top: calc(-1 * var(--card-set-gap-top));
-  margin-left: calc(-1 * var(--card-set-gap-left));
+  gap: 48px 24px;
 }
 .card-set > .item {
-  flex-basis: calc(100% / 3 - var(--card-set-gap-left));
-  margin-left: var(--card-set-gap-left);
-  margin-top: var(--card-set-gap-top);
+  flex-basis: calc(100% / 3 - 48px);
 }
 .card-content {
   border: var(--card-border);
   border-top: transparent;
   padding: 32px 16px;
 }
-.card-title {
+.menu-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  color: var(--title-text-color);
 }
 .card-text {
+  color: var(--primary-text-color);
   margin-top: 8px;
 }
 

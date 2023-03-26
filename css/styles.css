@@ -29,7 +29,7 @@ h2,
 h3 {
   margin: 0;
 }
-h1 {
+.hero-title {
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
@@ -40,7 +40,7 @@ h1 {
   line-height: 1.11;
   color: var(--title-text-color);
 }
-h3 {
+.skills-title {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
